@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 562777724080776222}
   - component: {fileID: 1290978717186865725}
   - component: {fileID: 3717514679258358456}
+  - component: {fileID: -7678496353102709127}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -176,3 +177,18 @@ MonoBehaviour:
   rb: {fileID: 562777724080776222}
   impactEffect: {fileID: 0}
   lifetime: 5
+--- !u!111 &-7678496353102709127
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515566816488608289}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
