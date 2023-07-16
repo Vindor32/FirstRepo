@@ -26,8 +26,8 @@ public class Enemy : MonoBehaviour
     {
 
 
-        ps.Emit(100);
-        
+        ps.Emit(20);
+        Destroy(gameObject);
         
     }
 
