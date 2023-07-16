@@ -4,6 +4,33 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+
+    public ParticleSystem ps;
+    public Transform position;
+
+    public int health = 100;
+
+    public GameObject deathEffect;
+
+    public void TakeDamage (int damage)
+    {
+        health -= damage;
+
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+
+
+        ps.Emit(100);
+        
+        
+    }
+
     // Start is called before the first frame update
     void Start()
     {
