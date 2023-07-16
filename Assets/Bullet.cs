@@ -9,6 +9,7 @@ public class Bullet : MonoBehaviour
     public float speed = 20f;
     public Rigidbody2D rb;
     public GameObject impactEffect;
+    public float lifetime = 2f;
 
     void Start ()
     {
@@ -27,5 +28,10 @@ public class Bullet : MonoBehaviour
 
         Destroy(gameObject);
 
+    }
+
+    void Awake ()
+    {
+        Destroy(gameObject, lifetime);
     }
 }
